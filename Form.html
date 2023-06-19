@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video 'Bite Me' Enhypen - Survey</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body class="page2">
+  <div class="container">
+    <h1>Survey - Video 'Bite Me'Enhypen</h1>
+    <form id="surveyForm">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" required><br><br>
+
+      <label for="date">Tanggal Pengisian:</label>
+      <input type="date" id="date" required><br><br>
+
+      <label for="videoQuality">Kualitas Gambar Video:</label>
+      <select id="videoQuality" required>
+        <option value="good">Kualitas Bagus</option>
+        <option value="average">Kualitas Biasa Saja</option>
+        <option value="low">Kualitas Rendah</option>
+      </select><br><br>
+
+      <label for="audioVolume">Kualitas Suara Music:</label>
+      <div class="radio-buttons">
+        <input type="radio" id="audioVolumeGood" name="audioVolume" value="good" required>
+        <label for="audioVolumeGood">Kualitas Bagus</label>
+
+        <input type="radio" id="audioVolumeAverage" name="audioVolume" value="average">
+        <label for="audioVolumeAverage">Kualitas Biasa Saja</label>
+
+        <input type="radio" id="audioVolumeLow" name="audioVolume" value="low">
+        <label for="audioVolumeLow">Kualitas Rendah</label>
+      </div><br><br>
+
+      <label for="feedback">Saran dan Kritik:</label>
+      <textarea id="feedback" rows="4" required></textarea><br><br>
+
+      <input type="submit" value="Submit" class="survey-button">
+    </form>
+  </div>
+</body>
+</html>
